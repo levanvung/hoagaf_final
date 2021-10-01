@@ -109,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				</div>
 				<!-- price range -->
-				<div class="range">
+				<!-- <div class="range">
 					<h3 class="agileits-sear-head">Mưc giá</h3>
 					<ul class="dropdown-menu6">
 						<li>
@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- //price range -->
 				<!--preference -->
 
@@ -147,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<!-- // preference -->
 				<!-- discounts -->
-				<div class="left-side">
+				<!-- <div class="left-side">
 					<h3 class="agileits-sear-head">Giảm Giá</h3>
 					<ul>
 						<li>
@@ -175,10 +175,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="span">60% or More</span>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- //discounts -->
 				<!-- reviews -->
-				<div class="customer-rev left-side">
+				<!-- <div class="customer-rev left-side">
 					<h3 class="agileits-sear-head">Người Mua Cùng Xem</h3>
 					<ul>
 						<li>
@@ -232,7 +232,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<!-- //reviews -->
 				<!-- deals -->
 				<div class="deal-leftmk left-side">
