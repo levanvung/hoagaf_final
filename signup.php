@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<i class="fa fa-lock"></i>
 				</div>
 				<div class="login-mail">
-					<input type="text" placeholder="Địa chỉ cụ thể" name="city" required="">
+					<input type="text" placeholder="Địa chỉ giao hàng của bạn" name="city" required="">
 					<i class="fa fa-lock"></i>
 				</div>
 				<div class="login-mail">
