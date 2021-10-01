@@ -54,6 +54,7 @@ if(isset($_GET['cus_id'])){
                     <td><?php echo $result_user['cus_name']; ?></td>
                     <td><?php echo $result_user['cus_phone']; ?></td>
                     <td><?php echo $result_user['cus_email']; ?></td>
+                    <td><?php echo $result_user['apartment_number']."-".$result_user['city']; ?></td>
                     <td>
                     <a href="cus_edit.php?cus_id=<?php echo $result_user['id']; ?>" class="active edit_style" ui-toggle-class="">
                         <i class="fa fa-pencil-square-o"></i>
