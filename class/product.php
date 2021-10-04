@@ -126,15 +126,19 @@
 
         }
         public function show_product_user(){
-            $query = "SELECT tbl_product.*,tbl_category.cat_name FROM tbl_product INNER JOIN tbl_category ON tbl_product.cat_id = tbl_category.cat_id ORDER BY tbl_product.product_id DESC";
+            $query = "SELECT * FROM tbl_product ORDER BY product_id DESC";
             $result = $this->db->select($query);
             return $result;
         }
         public function show_product_user_cate($id_cat){
-            $query = "SELECT tbl_product.*,tbl_category.cat_name FROM tbl_product INNER JOIN tbl_category ON tbl_product.cat_id = tbl_category.cat_id WHERE tbl_product.cat_id = '$id_cat' ORDER BY tbl_product.product_id DESC ";
+            $query = "SELECT tbl_product.*,tbl_category.cat_name FROM tbl_product INNER JOIN tbl_category ON tbl_product.cat_id = tbl_category.cat_id WHERE tbl_product.cat_id = '$id_cat'";
             $result = $this->db->select($query);
             return $result;
         }
-
+        public function show_all_product_user(){
+            $query = "SELECT tbl_product.*,tbl_category.cat_name FROM tbl_product INNER JOIN tbl_category ON tbl_product.cat_id = tbl_category.cat_id ORDER BY tbl_product.product_id DESC";
+            $result = $this->db->select($query);
+            return $result;
+        }
     } 
 ?>

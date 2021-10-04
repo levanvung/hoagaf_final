@@ -348,7 +348,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		// Configure environment
 		env: 'sandbox',
 		client: {
-		sandbox: 'demo_sandbox_client_id',
+		sandbox: 'AUemTo0Hwz-JzewN9G6wbIYTrUlabPt9HyGs6uOBbem3DQ2RcRhfUBQFwCb1IwxWaOicB-x_CnN8rLQF',
 		production: 'demo_production_client_id'
 		},
 		// Customize button (optional)
