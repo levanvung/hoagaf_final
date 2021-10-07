@@ -78,7 +78,7 @@
             $result = $this->db->select($query);
             return $result;
         }   
-        public function insert_order($cus_id){
+        public function insert_order($pay_id,$cus_id){
             $ses_id = session_id();
             $query = "SELECT * FROM tbl_cart WHERE ses_id = '$ses_id'";
             $get_pr = $this->db->select($query);
@@ -90,7 +90,8 @@
                     $size = $result['size'];
                     $price = $result['product_price']*$quantity;
                     $cus_id = $cus_id;
-                    $query_order = "INSERT INTO tbl_offline_payment(product_name,price,product_id,quantity,cus_id,size) VALUES('$product_name','$price','$product_id','$quantity','$cus_id','$size')";
+                    $pay_id = $pay_id;
+                    $query_order = "INSERT INTO tbl_offline_payment(product_name,price,product_id,quantity,cus_id,size,type_pay) VALUES('$product_name','$price','$product_id','$quantity','$cus_id','$size','$pay_id')";
                     $insert_order = $this->db->insert($query_order);
                 }
             }

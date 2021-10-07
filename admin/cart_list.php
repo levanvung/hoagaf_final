@@ -39,6 +39,7 @@
                         <th>Size</th>
                         <th>Ngày đặt</th>
                         <th>Trạng thái</th>
+                        <th>Hình thức thanh toán</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -67,6 +68,21 @@
 							case '1':
 								echo 'Đã nhận được hàng';
 								break;
+						}
+						?>
+                        </td>
+                        <td>
+                        <?php 
+						switch($result['type_pay']) {
+							case '1':
+								echo 'Thanh toán khi nhận hàng';
+								break;
+							case '2':
+								echo 'Thanh toán PayPal';
+								break;
+                            case '3':
+                                echo 'Thanh toán VNPAY';
+                                break;
 						}
 						?>
                         </td>

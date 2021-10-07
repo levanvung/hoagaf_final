@@ -49,9 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				?>
 				<?php
 					if(isset($_GET['order_id']) && $_GET['order_id']== 'order'){
-						// $pay_id = 1;
+						$pay_id = 2;
 						$cus_id = Session :: get('id');
-						$insert_order = $cart->insert_order($cus_id,);
+						$insert_order = $cart->insert_order($pay_id,$cus_id,);
 						$deletecart = $cart->delete_data();
 						header('Location:list_order.php');
 					}else{
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="ads-grid_shop">
 		<div class="shop_inner_inf">
 			<div style="text-align:center" class="privacy about">
-				<h3><span>Thanh Toán Khi Nhận Hàng</span></h3>
+				<h3><span>Xác nhận đã thanh toán</span></h3>
                 <br/>
                
                 <div  style="width:50%;border:1px solid #666;padding:10px;margin:auto" class="box_center" >
@@ -198,7 +198,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							    }
 							?>							
 							<li>Số tiền đơn hàng : <span><?php echo number_format($Total); ?></span> VNĐ</li>
-							<li>Tổng tiền đơn hàng :  <span><?php echo number_format($Total); ?></span> VNĐ</li>
+
+							<li>Tổng tiền đơn hàng :  <span><?php echo number_format($Totall); ?></span> VNĐ</li>
 							<?php 
 								}
 							?>
@@ -228,7 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
 			<br>
 			<div >
-				<a href="?order_id=order" class="order-button">Đặt hàng</a>
+				<a href="?order_id=order" class="order-button">Xác nhận</a>
 			</div>
 			<br>
        

@@ -2417,21 +2417,18 @@ input.ggg{
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: #f0bcb4;
-    color: white;
+    background: #000000;
+    color: #e9b8b8;
     border: none;
     outline: none;
-	display: table;
+    display: table;
     cursor: pointer;
     margin: 45px auto 31px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -ms-transition: 0.5s all;
 }
 .w3layouts-main input[type="submit"]:hover {
-	background:#8b5c7e;
+	background:#000000;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-o-transition:0.5s all;
@@ -2439,7 +2436,7 @@ input.ggg{
 	-ms-transition:0.5s all;
 }
 .w3layouts-main p a {
-    color: #f0bcb4;
+    color: #3b3130;
     padding: 10px;
 }
 .w3layouts-main p a:hover {
