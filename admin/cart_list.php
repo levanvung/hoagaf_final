@@ -36,6 +36,7 @@
                         <th>Tên sản phẩm</th>
                         <th>Giá tiền</th>
                         <th>Số lượng</th>
+                        <th>Size</th>
                         <th>Ngày đặt</th>
                         <th>Trạng thái</th>
                     </tr>
@@ -55,6 +56,7 @@
                         <td><?php echo $result['product_name']; ?></td>
                         <td><?php echo number_format($result['price']); ?></td>
                         <td><?php echo $result['quantity']; ?></td>
+                        <td><?php echo $result['size']; ?></td>
                         <td><?php echo $result['day_order']; ?></td>
                         <td>
                         <?php 

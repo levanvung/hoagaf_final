@@ -126,6 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<th>Loại sản Phẩm</th>
 								<th>Số Lượng</th>
 								<th>Tên Sản Phẩn</th>
+								<th>Size</th>
 								<th>Giá Tiền</th>
 								<th>Xóa</th>
 							</tr>
@@ -142,7 +143,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							?>
 							<tr class="rem1">
 								<td class="invert"><?php echo $i; ?></td>
-								<td class="invert-image"><a href="single.php"><img src="admin/uploads/<?php echo $result['product_image']; ?>" alt=" " class="img-responsive"></a></td>
+								<td class="invert-image"><a href="single.php"><img style="width:200px" src="admin/uploads/<?php echo $result['product_image']; ?>" alt=" " class="img-responsive"></a></td>
 								<td class="invert">
 									<div class="quantity">
 										<div class="quantity-select">
@@ -156,6 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</td>
 								<td class="invert"><?php echo $result['product_name']; ?></td>
+								<td class="invert"><?php echo $result['size']; ?></td>
 
 								<td class="invert"><?php echo number_format($subtotal); ?></td>
 								<td class="invert">

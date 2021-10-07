@@ -14,9 +14,11 @@
             $this->db = new Database;
             $this->fm = new Format;
         }
-        public function add_to_cart($quantity, $id){
+        public function add_to_cart($size,$quantity, $id){
             $quantity = $this->fm->validation($quantity);
+            $size = $this->fm->validation($size);
             $quantity = mysqli_real_escape_string($this->db->link,$quantity);
+            $size = mysqli_real_escape_string($this->db->link,$size);
             $id = mysqli_real_escape_string($this->db->link,$id);
             $session_id = session_id();
 
@@ -26,7 +28,7 @@
             $pr_id = $result['product_id'];
             $pr_price = $result['product_sale'];
             $pr_image = $result['product_image'];
-            $query_cart = "INSERT INTO tbl_cart(product_name,product_price,product_id,product_image,ses_id,quantity) VALUES('$pr_name','$pr_price','$pr_id','$pr_image','$session_id','$quantity')  ";
+            $query_cart = "INSERT INTO tbl_cart(product_name,product_price,product_id,product_image,ses_id,quantity,size) VALUES('$pr_name','$pr_price','$pr_id','$pr_image','$session_id','$quantity','$size')";
             $result_cart = $this->db->insert($query_cart);
             if($result_cart){
                 header("Location:checkout.php");
@@ -85,9 +87,10 @@
                     $product_id = $result['product_id'];
                     $product_name = $result['product_name'];
                     $quantity = $result['quantity'];
+                    $size = $result['size'];
                     $price = $result['product_price']*$quantity;
                     $cus_id = $cus_id;
-                    $query_order = "INSERT INTO tbl_offline_payment(product_name,price,product_id,quantity,cus_id) VALUES('$product_name','$price','$product_id','$quantity','$cus_id')  ";
+                    $query_order = "INSERT INTO tbl_offline_payment(product_name,price,product_id,quantity,cus_id,size) VALUES('$product_name','$price','$product_id','$quantity','$cus_id','$size')";
                     $insert_order = $this->db->insert($query_order);
                 }
             }

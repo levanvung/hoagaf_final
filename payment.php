@@ -80,19 +80,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="responsive_tabs">
 					<div id="horizontalTab">
 						<ul class="resp-tabs-list">
-							<li>Cash on delivery (COD)</li>
-							<li>Paypal Account</li>
+							<li>Thanh toán khi nhận hàng (COD)</li>
+							<li>Paypal</li>
 						</ul>
 						<div class="resp-tabs-container">
 							<!--/tab_one-->
 							<div class="tab1">
 								<div class="pay_info">
 									<div class="vertical_post check_box_agile">
-										<h5>COD</h5>
 										<div class="checkbox">
 											<div class="check_box_one cashon_delivery">
 												<label class="anim">
-													<input type="checkbox" class="checkbox">
 													<span ><a  style="color:black;"href="offlinepayment.php">Thanh Toán Khi Nhận Hàng</a></span> 				 
 												</label>
 											</div>

@@ -59,6 +59,15 @@
                         <li><a href="cart_list.php">Danh sách giỏ hàng</a></li>
                     </ul>
                 </li>
+                <li class="sub-menu">
+                    <a href="javascript:;">
+                    <i class="fas fa-comments"></i>
+                        <span>Reviews sản phẩm</span>
+                    </a>
+                    <ul class="sub">
+                        <li><a href="review_list.php">Danh sách bình luận</a></li>
+                    </ul>
+                </li>
 
             </ul>            </div>
         <!-- sidebar menu end-->

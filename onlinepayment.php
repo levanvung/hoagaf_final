@@ -49,8 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				?>
 				<?php
 					if(isset($_GET['order_id']) && $_GET['order_id']== 'order'){
+						// $pay_id = 1;
 						$cus_id = Session :: get('id');
-						$insert_order = $cart->insert_order($cus_id);
+						$insert_order = $cart->insert_order($cus_id,);
 						$deletecart = $cart->delete_data();
 						header('Location:list_order.php');
 					}else{
@@ -128,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<th>STT</th>
 								<th>Tên Sản Phẩn</th>
 								<th>Số Lượng</th>
-								
+								<th>Size</th>
 								<th>Giá Tiền</th>
 							
 							</tr>
@@ -156,6 +157,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</div>
 								</td>
+								<td class="invert"><?php echo $result['size']; ?></td>
 								
 
 								<td class="invert"><?php echo number_format($subtotal); ?> VNĐ</td>
@@ -188,6 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										
 							?>
 							<li>Tên Sản Phẩm:  <?php echo $result['product_name'] ?></li>
+							<li>Size:  <?php echo $result['size'] ?></li>
 							<li>Giá Sản Phẩm:  <?php echo number_format($result['product_price']); ?></li>
 							<?php
 								$Total += $subtotal;
@@ -195,9 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							    }
 							?>							
 							<li>Số tiền đơn hàng : <span><?php echo number_format($Total); ?></span> VNĐ</li>
-							<li>Ship COD : <span><?php echo number_format($COD); ?></span> VNĐ</li>
-
-							<li>Tổng tiền đơn hàng :  <span><?php echo number_format($bill); ?></span> VNĐ</li>
+							<li>Tổng tiền đơn hàng :  <span><?php echo number_format($Total); ?></span> VNĐ</li>
 							<?php 
 								}
 							?>

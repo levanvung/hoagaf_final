@@ -56,10 +56,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					}
 					if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_to_cart'])){
 						$quantity = $_POST['quantity'];
+						$size = $_POST['size'];
 						$check_user = Session :: get('user_login');
 						$msg = $check_user;
 						if($msg==true){
-						$add_to_cart = $cart->add_to_cart($quantity,$id);
+						$add_to_cart = $cart->add_to_cart($size,$quantity,$id);
 						}else{
 							echo "<script>
 							window.alert('Bạn phải đăng nhập để thêm!');
@@ -149,30 +150,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 				<br/>
-				<div class="color-quality">
-					<div class="color-quality-right">
-						<h5>Color :</h5>
-						<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-								<option style ="background-color:red;"  value="null">Red</option>
-								<option  style ="background-color:green" value="null">Green</option> 
-								<option style ="background-color:purple" value="null">Purple</option>					
-								<option style ="background-color:yellow" value="null">Custom</option>								
-							</select>
-					</div>
-				</div>
-				<br />
-				<div class="color-quality">
-					<div class="color-quality-right">
-						<h5>Size :</h5>
-						<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-								<option value="null">40</option>
-								<option value="null">41</option> 
-								<option value="null">42</option>					
-								<option value="null">43</option>								
-							</select>
-					</div>
-				</div>
-				<br>
 				<div class="occasional">
 											
 				</div>
@@ -183,6 +160,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="color-quality-right">
 									<h5>Số Lượng :</h5>
 									<input  style="width: 50px;" type="number" name="quantity" value="1" min="1" />
+								</div>
+							</div>
+							<br>
+							<div class="color-quality">
+								<div class="color-quality-right">
+									<h5>Size :</h5>
+									<input  style="width: 50px;" type="number" name="size" value="36" />
 								</div>
 							</div>
 							<br>
@@ -200,8 +184,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							if(isset($add_to_cart)){
 								echo '<span style="color:Red;font-size:19px;">Thông Báo : Sản Phẩm Đã Được Thêm Vào Giỏ Hàng!!</span>';
 							}
-							
-							 ?>
+						 ?>
 
 
 					</div>

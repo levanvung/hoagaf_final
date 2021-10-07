@@ -115,6 +115,17 @@
                 return $alert;
             }
         }
+        public function delete_review($id){
+            $query = "DELETE FROM tbl_binhluan WHERE binhluan_id = $id";
+            $result = $this->db->DELETE($query);
+            if($result){
+                $alert = "<span class = 'success'>Xóa thành công </span>";
+                return $alert;
+            }else{
+                $alert = "<span class = 'unsuccess'>Xóa thất bại</span>";
+                return $alert;
+            }
+        }
         public function show_id_user(){
             $session = session_id();
             $query = "SELECT * FROM tbl_custumer WHERE ses_id = '$session' ";
@@ -142,6 +153,11 @@
         }
         public function show_review($id){
             $query = "SELECT * FROM tbl_binhluan WHERE product_id = '$id' ORDER BY binhluan_id DESC LIMIT 1";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function show_admin_review(){
+            $query = "SELECT tbl_binhluan.*,tbl_product.product_name,tbl_product.product_image FROM tbl_binhluan INNER JOIN tbl_product ON tbl_binhluan.product_id = tbl_product.product_id ";
             $result = $this->db->select($query);
             return $result;
         }

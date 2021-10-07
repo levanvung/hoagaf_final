@@ -112,6 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<th>STT</th>
 								<th>Số Lượng</th>
 								<th>Tên Sản Phẩn</th>
+								<th>Size</th>
 								<th>Giá Tiền</th>
 								<th>Ngày đặt hàng</th>
 								<th>Trạng thái </th>
@@ -136,7 +137,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 								</td>
 								<td class="invert"><?php echo $result['product_name']; ?></td>
-
+								<td class="invert"><?php echo $result['size']; ?></td>
 								<td class="invert"><?php echo number_format($result['price']); ?></td>
 								<td class="invert"><?php echo $fm->formatDate($result['day_order']) ?></td>
 								<td class="invert">
