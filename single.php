@@ -140,13 +140,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p><span class="item_price"><?php echo number_format( $chitiet['product_sale']); ?></span>
 					<del><?php echo number_format( $chitiet['product_price']); ?></del>
 				</p>
-				<div class="rating1">
-					<ul class="stars">
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+				<div class="rating1" style="width:300px; color: white;">
+					<ul class="stars" >
+						<li><a href="#"><i style="font-size:20px;color: gold;" class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i style="font-size:20px;color: gold;" class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i style="font-size:20px;color: gold;" class="fa fa-star" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i style="font-size:20px;color: gold;" class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i style="font-size:20px;color: gold;" class="fa fa-star-o" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<br/>
@@ -293,30 +293,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			<!--//tabs-->
 			<!-- /new_arrivals -->
-			<div class="new_arrivals">
+			<!-- <div class="new_arrivals">
 				<h3>Featured Products</h3>
-				<!-- /womens -->
+			
 				<div class="col-md-3 product-men women_two">
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s4.jpg" alt="">
+								<img src="images/s23.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="single.php" class="link-product-add-cart">Quick View</a>
+										<a href="single.php" class="link-product-add-cart">Xem Nhanh</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.php">Shuberry Heels </a>
+									<a href="single.php">Nike BatMan </a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
 										<div class="product_price">
 											<div class="grid-price ">
-												<span class="money ">$575.00</span>
+												<span class="money ">2.500.000 VNĐ</span>
 											</div>
 										</div>
 										<ul class="stars">
@@ -349,23 +349,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s5.jpg" alt="">
+								<img src="images/s25.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="single.php" class="link-product-add-cart">Quick View</a>
+										<a href="single.php" class="link-product-add-cart">Xem Nhanh</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.php">Red Bellies </a>
+									<a href="single.php">Rich Owens </a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
 										<div class="product_price">
 											<div class="grid-price ">
-												<span class="money ">$325.00</span>
+												<span class="money ">700.000 VNĐ</span>
 											</div>
 										</div>
 										<ul class="stars">
@@ -447,23 +447,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s8.jpg" alt="">
+								<img src="images/s19.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="single.php" class="link-product-add-cart">Quick View</a>
+										<a href="single.php" class="link-product-add-cart">Xem Nhanh</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="single.php">Sukun Casuals</a>
+									<a href="single.php">Nike Braze</a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
 										<div class="product_price">
 											<div class="grid-price ">
-												<span class="money ">$505.00</span>
+												<span class="money ">500.000 VNĐ</span>
 											</div>
 										</div>
 										<ul class="stars">
@@ -493,9 +493,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 
-				<!-- //womens -->
+				
 				<div class="clearfix"></div>
-			</div>
+			</div> -->
 			<!--//new_arrivals-->
 
 

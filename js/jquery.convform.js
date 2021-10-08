@@ -40,6 +40,7 @@ ConvState.prototype.newState = function(options) {
     return new SingleConvState(input);
 };
 ConvState.prototype.next = function(){
+    // dongnaybinode
     // if(this.current.input.hasOwnProperty('callback')) {
     //     if(typeof this.current.input.callback === 'string') {
     //         window[this.current.input.callback](this);
@@ -47,6 +48,7 @@ ConvState.prototype.next = function(){
     //         this.current.input.callback(this);
     //     }
     // }
+    // đenay
     if(this.current.hasNext()){
         this.current = this.current.next;
         if(this.current.input.hasOwnProperty('fork') && this.current.input.hasOwnProperty('case')){

@@ -116,16 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</form>
 				</div>
 				<!-- price range -->
-				<div class="range">
-					<h3 class="agileits-sear-head">Mưc giá</h3>
-					<ul class="dropdown-menu6">
-						<li>
-
-							<div id="slider-range"></div>
-							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
-						</li>
-					</ul>
-				</div>
+				
 				<!-- //price range -->
 				<!--preference -->
 
@@ -154,143 +145,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<!-- // preference -->
 				<!-- discounts -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Giảm Giá</h3>
-					<ul>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">5% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">10% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">20% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">30% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">50% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">60% or More</span>
-						</li>
-					</ul>
-				</div>
+			
 				<!-- //discounts -->
 				<!-- reviews -->
-				<div class="customer-rev left-side">
-					<h3 class="agileits-sear-head">Người Mua Cùng Xem</h3>
-					<ul>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<span>5.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>4.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>3.5</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>3.0</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>2.5</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+			
 				<!-- //reviews -->
 				<!-- deals -->
 				<div class="deal-leftmk left-side">
-					<h3 class="agileits-sear-head">Special Deals</h3>
+					<h3 class="agileits-sear-head">Sản phẩm bán chạy</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s4.jpg" alt="">
+							<img src="images/s34.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Shuberry Heels</h3>
-							<a href="single.php">$180.00</a>
+							<h3>MLB</h3>
+							<a href="single.php">500.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s2.jpg" alt="">
+							<img src="images/s35.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Chikku Loafers</h3>
-							<a href="single.php">$99.00</a>
+							<h3>Nike NY</h3>
+							<a href="single.php">1.000.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s1.jpg" alt="">
+							<img src="images/s36.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Bella Toes</h3>
-							<a href="single.php">$165.00</a>
+							<h3>MLB L-A</h3>
+							<a href="single.php">750.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s5.jpg" alt="">
+							<img src="images/s37.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Red Bellies</h3>
-							<a href="single.php">$225.00</a>
+							<h3>Rich Owens</h3>
+							<a href="single.php">800.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s3.jpg" alt="">
+							<img src="images/s38.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>(SRV) Sneakers</h3>
-							<a href="single.php">$169.00</a>
+							<h3>HUMAN RACE</h3>
+							<a href="single.php">2.500.00 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>

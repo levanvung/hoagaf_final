@@ -64,6 +64,7 @@
             $result = $this->db->select($query);
             return $result;
         }
+     
         public function update_product($data,$files,$id){
             $product_name = mysqli_real_escape_string($this->db->link,$data['product_name']);
             $product_price = mysqli_real_escape_string($this->db->link,$data['product_price']);
@@ -126,7 +127,19 @@
 
         }
         public function show_product_user(){
-            $query = "SELECT * FROM tbl_product ORDER BY product_id DESC";
+            $sp_tungtrang = 9;
+			if(!isset($_GET['trang'])){
+				$trang = 1;
+			}else{
+				$trang = $_GET['trang'];
+			}
+			$tung_trang = ($trang-1)*$sp_tungtrang;
+            $query = "SELECT * FROM tbl_product ORDER BY product_id DESC LIMIT $tung_trang,$sp_tungtrang";
+            $result = $this->db->select($query);
+            return $result;
+        }
+        public function get_all_product(){
+            $query = "SELECT * FROM tbl_product";
             $result = $this->db->select($query);
             return $result;
         }

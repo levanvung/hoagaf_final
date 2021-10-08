@@ -82,21 +82,22 @@
 
 form.convFormDynamic {
     width: calc(100% - 33px);
-    margin: 10px auto 15px;
+    
+    margin: -25px auto -30px; 
     padding: 0 !important;
     position: relative;
     box-shadow: 0 0 5px 5px rgba(222, 222, 222, 0.4);
 }
-
+/* #co chu cua nguoi dung */
 form.convFormDynamic textarea.userInputDynamic {
     border: none;
     padding: 7px 10px;
     outline: none;
-    font-size: 0.905rem;
+    font-size: 15px;
     float: left;
     width: calc(100% - 70px);
     line-height: 1.3em;
-    min-height: 1.7em;
+    min-height: 2.2em;
     max-height: 10rem;
     display: block;
     max-width: 88%;
@@ -106,9 +107,9 @@ form.convFormDynamic textarea.userInputDynamic {
 
 form.convFormDynamic input.userInputDynamic {
     border: none;
-    padding: 7px 10px;
+    padding: 7px 20px;
     outline: none;
-    font-size: 0.905rem;
+    font-size: 15px;
     float: left;
     width: calc(100% - 70px);
     line-height: 1.3em;
@@ -224,7 +225,7 @@ div.conv-form-wrapper div.options div.option {
     color: #06c5a6;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 div.conv-form-wrapper div.message {
     animation: slideTop 0.15s ease;
@@ -238,10 +239,11 @@ div.conv-form-wrapper  div.message.ready {
     animation: bounceIn 0.2s ease;
     transform-origin: 0 0 0;
 }
+/* co chu cua bot */
 div.conv-form-wrapper  div#messages div.message {
     border-radius: 20px;
     padding: 12px 22px;
-    font-size: 0.905rem;
+    font-size: 15px;
     color: #333;
     display: inline-block;
     padding: 10px 15px 8px;
@@ -252,7 +254,9 @@ div.conv-form-wrapper  div#messages div.message {
     max-width: 65%;
     word-wrap: break-word;
 }
+/* message cua bot */
 div.conv-form-wrapper  div#messages div.message.to {
+    margin-bottom:30px;
     background: #efefef;
     color: #6f6f6f;
     float: left;
@@ -302,7 +306,7 @@ form.convFormDynamic button.submit {
     color: #06c5a6;
     cursor: pointer;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     width: 36px;
     height: 35px;
     margin-top: 4px;

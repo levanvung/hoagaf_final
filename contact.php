@@ -17,6 +17,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			window.scrollTo(0, 1);
 		}
 	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+
+<!-- ChatBot -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.convform.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
 	<!-- //custom-theme -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/shop.css" type="text/css" media="screen" property="" />
@@ -88,6 +98,63 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 
 	<!-- //banner -->
+	<!-- chatbot -->
+	<div class="chatbot">
+	<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Xin chào! Hoagaf giúp gì được cho bạn nhỉ" name="category">
+        <option value="WebDevelopment">Bạn cần trợ giúp ?</option>
+        <option value="DigitalMarketing">Bạn cần tư vấn ?</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+          <input type="text" name="domainName" data-conv-question="Hãy cho chúng tôi biết vấn đề của bạn">    
+        </div>
+        <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Bạn muốn tư vấn gì có thể cho HoaGaf biết ,chúng tôi sẽ luôn đồng hành cùng bạn">
+		 
+        </div>
+      </div>
+	 
+
+      <input type="text" name="name" data-conv-question="Cho Hoagaf biết tên của bạn nha !!">
+
+      <input type="text" data-conv-question="chào {name}, <br> rất vui được gặp bạn bây giờ chúng tôi sẽ hỗ trợ bạn." data-no-answer="true">
+
+      <input data-conv-question="Nhập Mail của bạn vào nhé " data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+	  
+      <input type="text" data-conv-question="Điều này sẽ giúp Hoagaf liên lạc với bạn dễ hơn" data-no-answer="true">
+	  <input type="text" name="name" data-conv-question="Ngây bây giờ chúng tôi sẽ hỗ trợ bạn!! Gõ phím bất kì đề tiếp tục nhé">
+	
+	  
+      <select data-conv-question="Nhấn vào xác nhận để được xử lí ngay nha">
+		 <option value="Yes">Xác Nhận</option></a>
+      </select>
+	  <div data-conv-fork="category">
+        <div data-conv-case="WebDevelopment">
+
+          <input type="text" name="domainName" data-conv-question="Vấn đề của bạn đã được tiếp nhận, nhấn vào đây để được hỗ trợ ">  
+		  </div>
+		  <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+          <input type="text" name="companyName" data-conv-question="Để ý điện thoại nhé nhân viên Hoagaf đang liên lạc với bạn đó">
+		 
+        </div> 
+		  
+       
+	  </div>
+	  
+  	</form>
+	</div>
+</div>
+	</div>
+<!-- endchat -->
 	<!-- top Products -->
 	<div class="ads-grid_shop">
 		<div class="shop_inner_inf">
@@ -108,7 +175,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"> </div>
 						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
 						<input type="submit" value="Gửi">
-						<input type="reset" value="Xóa">
+						<input style="text-align: center" type="reset" value="Xóa">
 					</form>
 				</div>
 				<div class="col-md-5 contact-left">
@@ -190,10 +257,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //footer -->
 
 	<!-- js -->
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+
+	<!-- <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+
+
 	<!-- //js -->
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<!-- <script src="js/minicart.js"></script> -->
 	<script>
 		shoe.render();
 
@@ -210,11 +281,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //cart-js -->
 	<!-- /nav -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/demo1.js"></script>
+	 <script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script> -->
 	<!-- //nav -->
-	<!-- script for responsive tabs -->
-	<script src="js/easy-responsive-tabs.js"></script>
+	<!-- //script for responsive tabs  -->
+	 <script src="js/easy-responsive-tabs.js"></script> 
 	<script>
 		$(document).ready(function () {
 			$('#horizontalTab').easyResponsiveTabs({

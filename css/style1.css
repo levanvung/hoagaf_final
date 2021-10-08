@@ -1,0 +1,90 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  /*banner*/
+  
+  
+  
+  /*about-section*/
+  
+  
+  
+  /*portfolio-section*/
+  
+  /*contact-section*/
+  
+  input:not([type="submit"]),
+  textarea{
+      border: 1px solid #abb3c0;
+      color: #667080;
+      padding: 10px 16px;
+      margin: 0 0 15px 0;
+      font: 14px/22px "Open Sans", sans-serif;
+      background-color: white;
+      height: 42px;
+      outline: none;
+      width: 100%;
+      text-align: left;
+      border-radius: 4px;
+  }
+  textarea{
+      height: 80px
+  }
+  input[type="submit"]{
+      border: 0px;
+    color: white;
+    background: #010519;
+    padding: 11px 25px;
+    margin: 0 0 15px 0;
+    font: 14px/20px "Open Sans", sans-serif;
+    height: 42px;
+    outline: none;
+    width: auto;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  
+  /*ChatBot*/
+  .chat_icon{
+      position: fixed;
+      bottom: 0;
+      right: 30px;
+      z-index: 1000;
+      padding: 0;
+      font-size: 80px;
+      color: red;
+      cursor: pointer;
+  }
+  .chat_box{
+      width: 400px;
+      height: 75vh;
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background:red;
+      z-index: 1000;
+      transition: all 0.3s ease-out;
+      transform: scaleY(0);
+  }
+  .chat_box.active{
+      transform: scaleY(1);
+  }
+  #messages{
+      padding: 20px;
+  }
+  .my-conv-form-wrapper textarea{
+      height: 30px;
+      overflow: hidden;
+      resize: none;
+      font-size: 60px;
+  }
+  .hidden{
+      display: none !important;
+  }
+  

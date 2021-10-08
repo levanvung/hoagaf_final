@@ -146,54 +146,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>
 				</div>
 				<div class="deal-leftmk left-side">
-					<h3 class="agileits-sear-head">Special Deals</h3>
+					<h3 class="agileits-sear-head">Sản phẩm bán chạy</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s4.jpg" alt="">
+							<img src="images/s17.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Shuberry Heels</h3>
-							<a href="single.php">$180.00</a>
+							<h3>Vans Fire</h3>
+							<a href="single.php">500.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s2.jpg" alt="">
+							<img src="images/s18.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Chikku Loafers</h3>
-							<a href="single.php">$99.00</a>
+							<h3>Nike Jordan</h3>
+							<a href="single.php">1.000.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s1.jpg" alt="">
+							<img src="images/s19.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Bella Toes</h3>
-							<a href="single.php">$165.00</a>
+							<h3>Converse</h3>
+							<a href="single.php">750.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s5.jpg" alt="">
+							<img src="images/s20.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Red Bellies</h3>
-							<a href="single.php">$225.00</a>
+							<h3>Puma Carbon</h3>
+							<a href="single.php">800.000 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="images/s3.jpg" alt="">
+							<img src="images/s33.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>(SRV) Sneakers</h3>
-							<a href="single.php">$169.00</a>
+							<h3>HUMAN RACE</h3>
+							<a href="single.php">2.500.00 VNĐ</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -295,7 +295,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						
 						
 						
-						
 
 					<!-- //product-sec1 -->
 					<div class="col-md-6 shop_left shp">
@@ -313,7 +312,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<style type="text/css">
+				a.phantrang {
+				    border: 1px solid #ddd;
+					border-radius:10px;
+				    padding: 10px;
+				    background: #414045;
+				    color: #fff;
+				    cursor: pointer;
+				   
+				}
+				a.phantrang:hover {
+				    background: orange;
+				}
+				.chiatrang{
+					margin-left: 55%;
+				}
+			</style>
+				<br/><br/><br/>
+				<div s class="chiatrang">
+				<?php
+				if(isset($_GET['trang'])){
+					$trang = $_GET['trang'];
+				}else{
+					$trang = 1;
+				}
+				$product_all = $product->get_all_product(); 
+				$product_count = mysqli_num_rows($product_all);
+				$product_button = ceil($product_count/9);
+				$i = 1;
+				
+				for($i=1;$i<=$product_button;$i++){
+					?>
+					<a class="phantrang" <?php if($i==$trang){ echo 'style="background:red"';} ?> style="margin:0 5px;" href="shop.php?trang=<?php echo $i ?>"><?php echo $i ?></a>	
+					<?php
+					
+				}
+				?>
+			</div>
 	</div>
+	
+
 	<!-- //top products -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
