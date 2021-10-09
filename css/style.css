@@ -763,6 +763,7 @@ li.dropdown.act a.w3_icons_act {
 
 .style-image-2 {
 	position: relative;
+    
 }
 
 .style-grid-2-text p {
@@ -2174,5 +2175,10 @@ p.head_para {
         width: 17%;
     }
 
+}
+.anhsize{
+    margin-right: 100px;
+    width: 3px;
+    height:3px;
 }
 /*--//responsive--*/
