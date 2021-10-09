@@ -82,6 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="resp-tabs-list">
 							<li>Thanh toán khi nhận hàng (COD)</li>
 							<li>Paypal</li>
+							<li>VNPAY</li>
 						</ul>
 						<div class="resp-tabs-container">
 							<!--/tab_one-->
@@ -118,6 +119,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div id="paypal-button"></div>
 									<input type="hidden"  id="vnd_to_usd" value="<?php echo round($vnd_to_usd,2); ?>">
 									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="tab4">
+								<div class="pay_info">
+									<div class="col-md-6 tab-grid">
+										<img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
+										<p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
+									</div>
+									<?php
+										if(isset($_GET['total']) && $_GET['total']!=""){
+											$total=$_GET['total'];
+										}
+									?>
+									<a href="vnpay.php?total=<?php echo $total ?>">Thanh toán bằng VNPAY</a>
 								</div>
 							</div>
 						</div>
