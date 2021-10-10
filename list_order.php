@@ -116,6 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<th>Giá Tiền</th>
 								<th>Ngày đặt hàng</th>
 								<th>Trạng thái </th>
+								<th>Hình thức thanh toán </th>
 							</tr>
 						</thead>
 						<tbody>
@@ -152,6 +153,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										}
 									?>
 								</td>
+								<td>
+                        <?php 
+						switch($result['type_pay']) {
+							case '1':
+								echo 'Thanh toán khi nhận hàng';
+								break;
+							case '2':
+								echo 'Thanh toán PayPal';
+								break;
+                            case '3':
+                                echo 'Thanh toán VNPAY';
+                                break;
+						}
+						?>
+                        </td>
 							</tr>
 							<?php
 							    }

@@ -11,12 +11,12 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Thông tin thanh toán</title>
+        <title>Tạo mới đơn hàng</title>
         <!-- Bootstrap core CSS -->
-        <link href="/vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
+        <link href="vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="/vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">         
-        <script src="/vnpay_php/assets/jquery-1.11.3.min.js"></script>
+        <link href="vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">  
+        <script src="vnpay_php/assets/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <?php
@@ -65,10 +65,7 @@
                     <label >Nội dung thanh toán:</label>
                     <label><?php echo $_GET['vnp_OrderInfo'] ?></label>
                 </div> 
-                <div class="form-group">
-                    <label >Mã phản hồi (vnp_ResponseCode):</label>
-                    <label><?php echo $_GET['vnp_ResponseCode'] ?></label>
-                </div> 
+                 
                 <div class="form-group">
                     <label >Mã GD Tại VNPAY:</label>
                     <label><?php echo $_GET['vnp_TransactionNo'] ?></label>
@@ -129,9 +126,7 @@
             <p>
                 &nbsp;
             </p>
-            <footer class="footer">
-                <p>&copy; Quản lý Tiếng Anh 2020</p>
-            </footer>
+            
         </div>  
     </body>
 </html>

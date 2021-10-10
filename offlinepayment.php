@@ -51,7 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					if(isset($_GET['order_id']) && $_GET['order_id']== 'order'){
 						$pay_id = 1;
 						$cus_id = Session :: get('id');
-						$insert_order = $cart->insert_order($pay_id,$cus_id,);
+						$insert_order = $cart->insert_order($pay_id,$cus_id);
 						$deletecart = $cart->delete_data();
 						header('Location:list_order.php');
 					}else{

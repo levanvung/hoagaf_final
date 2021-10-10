@@ -92,7 +92,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="checkbox">
 											<div class="check_box_one cashon_delivery">
 												<label class="anim">
-													<span ><a  style="color:black;"href="offlinepayment.php">Thanh Toán Khi Nhận Hàng</a></span> 				 
+													<span >
+														<div >
+																<a  style="border-radius: 20px;background-color: #fc636b;color:black; "href="offlinepayment.php" class="order-button">Thanh Toán khi nhận hàng</a>
+														</div>
+													</span>
 												</label>
 											</div>
 
@@ -124,16 +128,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="tab4">
 								<div class="pay_info">
 									<div class="col-md-6 tab-grid">
-										<img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
-										<p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
+										
+										
 									</div>
 									<?php
 										if(isset($_GET['total']) && $_GET['total']!=""){
 											$total=$_GET['total'];
 										}
 									?>
-									<a href="vnpay.php?total=<?php echo $total ?>">Thanh toán bằng VNPAY</a>
-								</div>
+								
+										
+									
+									<span >
+														<div >
+																<a  style="border-radius: 20px;background-color: #fc636b;color:black; "href="vnpay.php?total=<?php echo $total ?>" class="order-button">Thanh Toán VNPay</a>
+														</div>
+													</span>
+									 
+									
+								
 							</div>
 						</div>
 					</div>
